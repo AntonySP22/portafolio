@@ -1,0 +1,238 @@
+:root {
+  --background: #0B0F17;
+  --text: #fff;
+  --secondary-text: #94A3B8;
+  --accent: #FBD928;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.5;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 100px; /* Espacio para la barra de menú fija */
+}
+
+/* Barra de menú fija con difuminado */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centrar las opciones */
+  gap: 32px;
+  padding: 16px 20px;
+  background: rgba(11, 15, 23, 0.8); /* Fondo semi-transparente */
+  backdrop-filter: blur(10px); /* Efecto de difuminado */
+  z-index: 1000;
+}
+
+.navbar a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--accent);
+}
+
+/* Foto de perfil redonda */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.profile-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Hace la imagen redonda */
+  object-fit: cover; /* Ajusta la imagen */
+}
+
+.badge {
+  display: inline-block;
+  background-color: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.highlight {
+  color: var(--accent);
+}
+
+.bio {
+  color: var(--secondary-text);
+  font-size: 20px;
+  max-width: 600px;
+  margin-bottom: 32px;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 64px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text);
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+section {
+  margin-bottom: 64px;
+  padding-top: 80px; /* Espacio para la barra de menú fija */
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.experience-item {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+  position: relative;
+  padding-left: 24px;
+}
+
+.experience-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  background: #fbd928;
+  border-radius: 50%;
+}
+
+.experience-item::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 24px;
+  width: 2px;
+  height: calc(100% - 24px);
+  background: rgba(251, 217, 40, 0.2);
+}
+
+.experience-content h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.experience-content .company {
+  color: var(--secondary-text);
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.project {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.project-title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 8px;
+}
+
+.tech-tag {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.project-links {
+  display: flex;
+  gap: 16px;
+}
+
+.project-description {
+  color: var(--secondary-text);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 32px;
+  }
+
+  .bio {
+      font-size: 16px;
+  }
+
+  .buttons {
+      flex-direction: column;
+  }
+
+  .experience-item {
+      flex-direction: column;
+      gap: 16px;
+  }
+
+  .navbar {
+      gap: 16px; /* Reducir espacio entre opciones en móviles */
+  }
+}
