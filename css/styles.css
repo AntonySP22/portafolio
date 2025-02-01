@@ -12,7 +12,7 @@
 }
 
 html {
-  scroll-behavior: smooth; /* Desplazamiento suave */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -26,21 +26,20 @@ body {
 .container {
   max-width: 700px;
   margin: 0 auto;
-  padding-top: 100px; /* Espacio para la barra de menú fija */
+  padding-top: 100px;
 }
 
-/* Barra de menú fija con difuminado */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: center; /* Centrar las opciones */
+  justify-content: center;
   gap: 32px;
   padding: 16px 20px;
-  background: rgba(11, 15, 23, 0.8); /* Fondo semi-transparente */
-  backdrop-filter: blur(10px); /* Efecto de difuminado */
+  background: rgba(11, 15, 23, 0.8);
+  backdrop-filter: blur(10px);
   z-index: 1000;
 }
 
@@ -55,7 +54,6 @@ body {
   color: var(--accent);
 }
 
-/* Foto de perfil redonda */
 .profile-header {
   display: flex;
   align-items: center;
@@ -66,8 +64,8 @@ body {
 .profile-photo {
   width: 60px;
   height: 60px;
-  border-radius: 50%; /* Hace la imagen redonda */
-  object-fit: cover; /* Ajusta la imagen */
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .badge {
@@ -121,7 +119,7 @@ h1 {
 
 section {
   margin-bottom: 64px;
-  padding-top: 80px; /* Espacio para la barra de menú fija */
+  padding-top: 80px;
 }
 
 .section-title {
@@ -147,7 +145,7 @@ section {
   top: 8px;
   width: 8px;
   height: 8px;
-  background: #fbd928;
+  background: var(--accent);
   border-radius: 50%;
 }
 
@@ -172,46 +170,107 @@ section {
   font-size: 14px;
 }
 
-.project {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  padding: 24px;
-  margin-bottom: 24px;
+/* Nuevos estilos para la sección de proyectos */
+.projects-section {
+  padding: 2rem 0;
 }
 
-.project-header {
+.projects-title {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 16px;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
 
-.project-title {
-  font-size: 20px;
-  margin-bottom: 8px;
+.project-card {
+  background-color: #151922;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.2s;
+  margin-bottom: 2rem;
 }
 
-.tech-stack {
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-preview {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1.5rem;
+}
+
+.project-card-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.tech-badges {
   display: flex;
-  gap: 8px;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
 }
 
-.tech-tag {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 4px 12px;
-  border-radius: 999px;
-  font-size: 12px;
-}
-
-.project-links {
-  display: flex;
-  gap: 16px;
+.tech-badge {
+  display: inline-block;
+  background-color: rgba(59, 130, 246, 0.2);
+  color: #60A5FA;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
 }
 
 .project-description {
   color: var(--secondary-text);
-  font-size: 14px;
-  margin-bottom: 16px;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: white;
+  font-size: 0.875rem;
+  transition: background-color 0.2s;
+}
+
+.code-link {
+  background-color: #1F2937;
+}
+
+.preview-link {
+  background-color: #2563EB;
+}
+
+.project-link:hover {
+  opacity: 0.9;
+}
+
+.link-icon {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 @media (max-width: 768px) {
@@ -233,6 +292,18 @@ section {
   }
 
   .navbar {
-      gap: 16px; /* Reducir espacio entre opciones en móviles */
+      gap: 16px;
+  }
+
+  .project-preview {
+      height: 200px;
+  }
+
+  .project-links {
+      flex-direction: column;
+  }
+
+  .projects-section {
+      padding: 1rem;
   }
 }
