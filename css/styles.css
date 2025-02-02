@@ -1,34 +1,40 @@
+/* Variables de colores y estilos globales */
 :root {
-  --background: #0B0F17;
-  --text: #fff;
-  --secondary-text: #94A3B8;
-  --accent: #FBD928;
+  --background: #0b0f17;    /* Color de fondo principal */
+  --text: #fff;             /* Color de texto principal */
+  --secondary-text: #94a3b8; /* Color de texto secundario */
+  --accent: #fbd928;        /* Color de acento/destacado */
 }
 
+/* Reset de estilos básicos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Configuración de scroll suave */
 html {
   scroll-behavior: smooth;
 }
 
+/* Estilos básicos del body */
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background-color: var(--background);
   color: var(--text);
   line-height: 1.5;
   padding: 40px 20px;
 }
 
+/* Contenedor principal */
 .container {
   max-width: 54rem;
   margin: 0 auto;
   padding-top: 100px;
 }
 
+/* Barra de navegación fija */
 .navbar {
   position: fixed;
   top: 0;
@@ -43,6 +49,7 @@ body {
   z-index: 1000;
 }
 
+/* Enlaces de la barra de navegación */
 .navbar a {
   color: var(--text);
   text-decoration: none;
@@ -54,6 +61,7 @@ body {
   color: var(--accent);
 }
 
+/* Encabezado del perfil */
 .profile-header {
   display: flex;
   align-items: center;
@@ -61,6 +69,7 @@ body {
   margin-bottom: 24px;
 }
 
+/* Foto de perfil */
 .profile-photo {
   width: 70px;
   height: 70px;
@@ -68,6 +77,7 @@ body {
   object-fit: cover;
 }
 
+/* Estilo para insignias/badges */
 .badge {
   display: inline-block;
   background-color: rgba(34, 197, 94, 0.2);
@@ -77,16 +87,19 @@ body {
   font-size: 14px;
 }
 
+/* Estilos de títulos principales */
 h1 {
   font-size: 48px;
   margin-bottom: 24px;
   font-weight: 700;
 }
 
+/* Texto destacado */
 .highlight {
   color: var(--accent);
 }
 
+/* Biografía */
 .bio {
   color: var(--secondary-text);
   font-size: 20px;
@@ -94,12 +107,14 @@ h1 {
   margin-bottom: 32px;
 }
 
+/* Contenedor de botones */
 .buttons {
   display: flex;
   gap: 16px;
   margin-bottom: 64px;
 }
 
+/* Estilo de botones */
 .button {
   display: flex;
   align-items: center;
@@ -117,11 +132,13 @@ h1 {
   background: rgba(255, 255, 255, 0.2);
 }
 
+/* Secciones generales */
 section {
   margin-bottom: 64px;
   padding-top: 80px;
 }
 
+/* Títulos de sección */
 .section-title {
   display: flex;
   align-items: center;
@@ -130,37 +147,54 @@ section {
   margin-bottom: 24px;
 }
 
+/* Elementos de experiencia */
 .experience-item {
   display: flex;
   gap: 32px;
   margin-bottom: 32px;
   position: relative;
-  padding-left: 24px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
+/* Punto decorativo en la línea de tiempo */
 .experience-item::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 8px;
+  left: -12px;
+  top: 36px;
   width: 8px;
   height: 8px;
   background: var(--accent);
   border-radius: 50%;
+  z-index: 2;
 }
 
+/* Línea vertical de la línea de tiempo */
 .experience-item::after {
   content: "";
   position: absolute;
-  left: 3px;
-  top: 24px;
+  left: -9px;
+  top: 38px;
+  height: calc(100% + 34px);
   width: 2px;
-  height: calc(100% - 24px);
   background: rgba(251, 217, 40, 0.2);
+}
+
+/* Elimina la línea del último elemento de experiencia */
+.experience-item:last-child::after {
+  display: none;
+}
+
+/* Contenido de los elementos de experiencia */
+.experience-content {
+  width: 100%;
 }
 
 .experience-content h3 {
   font-size: 20px;
+  margin-top: 0;
   margin-bottom: 8px;
 }
 
@@ -170,7 +204,13 @@ section {
   font-size: 14px;
 }
 
-/* Estilos de la sección de proyectos */
+/* Efecto hover en elementos de experiencia */
+.experience-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de proyectos */
 .projects-section {
   padding: 2rem 0;
   max-width: 1200px;
@@ -186,6 +226,7 @@ section {
   margin-bottom: 2rem;
 }
 
+/* Tarjetas de proyecto */
 .project-card {
   background-color: #151922;
   border-radius: 1rem;
@@ -198,24 +239,28 @@ section {
   transform: translateY(-4px);
 }
 
+/* Grid layout para contenido de proyecto */
 .project-content {
   display: grid;
   grid-template-columns: 0.7fr 0.9fr;
   gap: 2rem;
 }
 
+/* Contenedor de vista previa de proyecto */
 .project-preview {
   height: 100%;
   min-height: 300px;
   overflow: hidden;
 }
 
+/* Imagen del proyecto */
 .project-image {
   width: 100%;
   height: 100%;
   object-fit: fill;
 }
 
+/* Información del proyecto */
 .project-info {
   padding: 2rem 2rem 2rem 0;
   display: flex;
@@ -229,6 +274,7 @@ section {
   color: var(--text);
 }
 
+/* Stack tecnológico */
 .tech-stack {
   display: flex;
   gap: 0.75rem;
@@ -239,18 +285,20 @@ section {
 .tech-badge {
   display: inline-block;
   background-color: rgba(59, 130, 246, 0.2);
-  color: #60A5FA;
+  color: #60a5fa;
   padding: 0.5rem 1rem;
   border-radius: 9999px;
   font-size: 0.875rem;
 }
 
+/* Descripción del proyecto */
 .project-description {
   color: var(--secondary-text);
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
 
+/* Enlaces del proyecto */
 .project-links {
   display: flex;
   gap: 1rem;
@@ -270,11 +318,11 @@ section {
 }
 
 .code-link {
-  background-color: #1F2937;
+  background-color: #1f2937;
 }
 
 .preview-link {
-  background-color: #2563EB;
+  background-color: #2563eb;
 }
 
 .project-link:hover {
@@ -287,25 +335,32 @@ section {
   height: 1.25rem;
 }
 
-/* Media queries para responsividad */
+/* Media queries para diseño responsivo */
 @media (max-width: 768px) {
   .project-content {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;  /* Cambia a una columna en dispositivos móviles */
   }
 
   .project-preview {
-      min-height: 200px;
+    min-height: 200px;
   }
 
   .project-info {
-      padding: 1.5rem;
+    padding: 1.5rem;
   }
 
   .project-links {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .project-card-title {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
+}
+
+/* Tamaños de iconos de tecnologías */
+.jsLogo, .cssLogo, .htmlLogo,
+.bootstrapLogo {
+  width: 24px;
+  height: 24px;
 }
