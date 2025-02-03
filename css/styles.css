@@ -360,7 +360,8 @@ section {
 
 /* Tamaños de iconos de tecnologías */
 .jsLogo, .cssLogo, .htmlLogo,
-.bootstrapLogo {
+.bootstrapLogo, .viteLogo,
+.reactLogo {
   width: 24px;
   height: 24px;
 }
