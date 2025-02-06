@@ -359,9 +359,7 @@ section {
 }
 
 /* Tamaños de iconos de tecnologías */
-.jsLogo, .cssLogo, .htmlLogo,
-.bootstrapLogo, .viteLogo,
-.reactLogo {
+.project-icon {
   width: 24px;
   height: 24px;
 }
