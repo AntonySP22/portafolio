@@ -336,7 +336,7 @@ section {
 }
 
 /* Media queries para diseño responsivo */
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .project-content {
     grid-template-columns: 1fr;  /* Cambia a una columna en dispositivos móviles */
   }
@@ -347,10 +347,6 @@ section {
 
   .project-info {
     padding: 1.5rem;
-  }
-
-  .project-links {
-    flex-direction: column;
   }
 
   .project-card-title {
