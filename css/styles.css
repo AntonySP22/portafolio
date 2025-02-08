@@ -217,7 +217,7 @@ section {
   margin: 0 auto;
 }
 
-.projects-title {
+.projects-title, .section-title {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -362,4 +362,113 @@ section {
 .project-icon {
   width: 24px;
   height: 24px;
+}
+
+
+/* Sección de Tecnologías */
+.technologies-section {
+  margin-bottom: 64px;
+  padding-top: 80px;  /* Consistente con otras secciones */
+}
+
+/* Título de sección manteniendo el estilo existente */
+.technologies-section .section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.technologies-section .section-title svg {
+  width: 24px;
+  height: 24px;
+}
+
+.tech-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.tech-category {
+  background-color: rgba(255, 255, 255, 0.1);  /* Consistente con los botones */
+  border-radius: 12px;  /* Mismo radio que los botones */
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;  /* Mismo efecto que experience-item */
+}
+
+.tech-category:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tech-category-title {
+  font-size: 20px;  /* Mismo tamaño que los títulos de experiencia */
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.tech-item:hover {
+  transform: translateY(-4px);  /* Mismo efecto que otros elementos */
+}
+
+.tech-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.tech-name {
+  font-size: 14px;  /* Consistente con otros textos secundarios */
+  color: var(--secondary-text);
+  text-align: center;
+}
+
+/* Badge de aprendizaje */
+.learning-badge {
+  background-color: rgba(74, 222, 128, 0.2);;  /* Usando el color de acento */
+  color: #4ade80;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 10px;  /* Consistente con otros badges */
+  margin-top: 0.25rem;
+}
+
+/* Media queries consistentes con el resto del sitio */
+@media (max-width: 768px) {
+  .tech-categories {
+    grid-template-columns: 1fr;
+  }
+  
+  .tech-grid {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  }
+  
+  .tech-logo {
+    width: 40px;
+    height: 40px;
+  }
 }
