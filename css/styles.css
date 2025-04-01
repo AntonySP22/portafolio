@@ -468,3 +468,65 @@ section {
     height: 40px;
   }
 }
+
+/* Estilos para la sección Sobre mí */
+.about-section {
+    margin: 4rem 0;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo oscuro */
+    color: #c9d1d9; /* Texto claro */
+    border-radius: 12px;
+}
+
+.about-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.about-text .highlight {
+    color: #58a6ff; /* Color llamativo */
+    font-weight: bold;
+}
+
+.about-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transform: rotate(2deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image:hover {
+    transform: rotate(0deg) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about-image {
+        max-width: 200px;
+    }
+}
