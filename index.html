@@ -115,109 +115,194 @@
                     Proyectos
                 </h2>
 
-                <!-- Tarjeta de proyecto individual -->
-                <div class="project-card">
-                    <div class="project-content">
-                        <!-- Vista previa del proyecto -->
-                        <div class="project-preview">
-                            <img src="img/proyectoUni.png" alt="Preview del proyecto" class="project-image">
-                        </div>
-                        <!-- Información del proyecto -->
-                        <div class="project-info">
-                            <h3 class="project-card-title">Copia de pagina Web Universitaria</h3>
-                            <!-- Stack tecnológico usado -->
-                            <div class="tech-stack">
-                                <img src="https://svgl.app/library/html5.svg" class="project-icon" alt="HTML5" />
-                                <img src="https://svgl.app/library/javascript.svg" class="project-icon"alt="JavaScript" />
-                                <img src="https://svgl.app/library/css.svg" class="project-icon" alt="CSS3" />
-                                <img src="https://svgl.app/library/bootstrap.svg" class="project-icon"
-                                    alt="BOOTSTRAP" />
+                <!-- Carrusel de proyectos -->
+                <div class="project-carousel-container">
+                    <!-- Botones de navegación -->
+                    <button class="carousel-button prev-button" aria-label="Proyecto anterior">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+
+                    <!-- Contenedor del carrusel -->
+                    <div class="project-carousel">
+                        <!-- Primer proyecto (Web Universitaria) -->
+                        <div class="project-card">
+                            <div class="project-content">
+                                <div class="project-preview">
+                                    <img src="img/proyectoUni.png" alt="Preview del proyecto" class="project-image">
+                                </div>
+                                <div class="project-info">
+                                    <h3 class="project-card-title">Copia de pagina Web Universitaria</h3>
+                                    <!-- Stack tecnológico usado -->
+                                    <div class="tech-stack">
+                                        <img src="https://svgl.app/library/html5.svg" class="project-icon"
+                                            alt="HTML5" />
+                                        <img src="https://svgl.app/library/javascript.svg" class="project-icon"
+                                            alt="JavaScript" />
+                                        <img src="https://svgl.app/library/css.svg" class="project-icon" alt="CSS3" />
+                                        <img src="https://svgl.app/library/bootstrap.svg" class="project-icon"
+                                            alt="BOOTSTRAP" />
+                                    </div>
+                                    <p class="project-description">
+                                        Sitio web responsivo con tecnologías modernas que implementa interacciones vía
+                                        localStorage, interactividad con ventanas de cada carrera, DOOM y expresiones
+                                        regulares
+                                    </p>
+                                    <!-- Enlaces al código y preview -->
+                                    <div class="project-links">
+                                        <a href="https://github.com/AntonySP22/cg240032_DesPra02DAW"
+                                            class="project-link code-link" target="_blank" rel="noopener noreferrer">
+                                            <!-- Icono de GitHub -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                class="link-icon">
+                                                <path fill="currentColor"
+                                                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.76-1.605-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.467-2.38 1.235-3.22-.124-.303-.535-1.527.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.29-1.552 3.296-1.23 3.296-1.23.653 1.649.242 2.873.118 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.804 5.62-5.475 5.92.43.37.814 1.102.814 2.222v3.293c0 .32.218.694.825.576C20.565 21.796 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                                            </svg>
+                                            Code
+                                        </a>
+                                        <a href="https://cg240032-des-pra02-daw.vercel.app"
+                                            class="project-link preview-link" target="_blank" rel="noopener noreferrer">
+                                            <!-- Icono de vista previa -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                class="link-icon">
+                                                <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                            </svg>
+                                            Preview
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="project-description">
-                                Sitio web responsivo con tecnologías modernas que implementa interacciones vía
-                                localStorage, interactividad con ventanas de cada carrera, DOOM y expresiones regulares
-                            </p>
-                            <!-- Enlaces al código y preview -->
-                            <div class="project-links">
-                                <a href="https://github.com/AntonySP22/cg240032_DesPra02DAW"
-                                    class="project-link code-link" target="_blank" rel="noopener noreferrer">
-                                    <!-- Icono de GitHub -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="link-icon">
-                                        <path fill="currentColor"
-                                            d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.76-1.605-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.467-2.38 1.235-3.22-.124-.303-.535-1.527.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.29-1.552 3.296-1.23 3.296-1.23.653 1.649.242 2.873.118 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.804 5.62-5.475 5.92.43.37.814 1.102.814 2.222v3.293c0 .32.218.694.825.576C20.565 21.796 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
-                                    </svg>
-                                    Code
-                                </a>
-                                <a href="https://cg240032-des-pra02-daw.vercel.app" class="project-link preview-link"
-                                    target="_blank" rel="noopener noreferrer">
-                                    <!-- Icono de vista previa -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="link-icon">
-                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="2"
-                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="2"
-                                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                                    </svg>
-                                    Preview
-                                </a>
+                        </div>
+
+                        <!-- Segundo proyecto (To-Do con React) -->
+                        <div class="project-card">
+                            <div class="project-content">
+                                <div class="project-preview">
+                                    <img src="img/ToDo.png" alt="Preview del proyecto" class="project-image">
+                                </div>
+                                <div class="project-info">
+                                    <h3 class="project-card-title">To-Do con React</h3>
+                                    <!-- Stack tecnológico usado -->
+                                    <div class="tech-stack">
+                                        <img src="https://svgl.app/library/react_dark.svg" class="project-icon"
+                                            alt="REACT" />
+                                        <img src="https://svgl.app/library/vitejs.svg" class="project-icon"
+                                            alt="VITE" />
+                                    </div>
+                                    <p class="project-description">
+                                        El proyecto demuestra la implementación de tecnologías web modernas para crear
+                                        una
+                                        aplicación funcional y práctica de gestión de tareas
+                                    </p>
+                                    <!-- Enlaces al código y preview -->
+                                    <div class="project-links">
+                                        <a href="https://github.com/AntonySP22/pages-with-react"
+                                            class="project-link code-link" target="_blank" rel="noopener noreferrer">
+                                            <!-- Icono de GitHub -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                class="link-icon">
+                                                <path fill="currentColor"
+                                                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.76-1.605-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.467-2.38 1.235-3.22-.124-.303-.535-1.527.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.29-1.552 3.296-1.23 3.296-1.23.653 1.649.242 2.873.118 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.804 5.62-5.475 5.92.43.37.814 1.102.814 2.222v3.293c0 .32.218.694.825.576C20.565 21.796 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                                            </svg>
+                                            Code
+                                        </a>
+                                        <a href="https://antonysp22.github.io/pages-with-react/"
+                                            class="project-link preview-link" target="_blank" rel="noopener noreferrer">
+                                            <!-- Icono de vista previa -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                class="link-icon">
+                                                <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                            </svg>
+                                            Preview
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tercer proyecto (BookTracker) -->
+                        <div class="project-card">
+                            <div class="project-content">
+                                <div class="project-preview">
+                                    <img src="img/booktracker.png" alt="Preview del proyecto BookTracker"
+                                        class="project-image">
+                                </div>
+                                <div class="project-info">
+                                    <h3 class="project-card-title">BookTracker - Gestión de Libros</h3>
+                                    <!-- Stack tecnológico usado -->
+                                    <div class="tech-stack">
+                                        <img src="https://svgl.app/library/react_dark.svg" class="project-icon"
+                                            alt="React Native" />
+                                        <img src="https://svgl.app/library/firebase.svg" class="project-icon"
+                                            alt="Firebase" />
+                                    </div>
+                                    <p class="project-description">
+                                        App móvil en React Native para gestionar libros (por leer/leído/leyendo)
+                                        con autenticación y almacenamiento en Firebase para sincronización entre
+                                        dispositivos.
+                                    </p>
+                                    <!-- Enlaces al código y preview -->
+                                    <div class="project-links">
+                                        <a href="https://github.com/AntonySP22/booktracker"
+                                            class="project-link code-link" target="_blank" rel="noopener noreferrer">
+                                            <!-- Icono de GitHub -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                class="link-icon">
+                                                <path fill="currentColor"
+                                                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.76-1.605-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.467-2.38 1.235-3.22-.124-.303-.535-1.527.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.29-1.552 3.296-1.23 3.296-1.23.653 1.649.242 2.873.118 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.804 5.62-5.475 5.92.43.37.814 1.102.814 2.222v3.293c0 .32.218.694.825.576C20.565 21.796 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                                            </svg>
+                                            Code
+                                        </a>
+                                        <a href="https://expo.dev/preview/update?message=Completar%20funcionalidad%20de%20la%20app%2C%20agregar%2Feditar%2C%20ver%2C%20filtrar%2C%20buscar%2C%20lista%20para%20produccion&updateRuntimeVersion=1.0.0&createdAt=2025-05-24T05%3A54%3A20.070Z&slug=exp&projectId=4e0db542-9a6d-41b3-903c-5ce4fae1db75&group=45e9ae47-088d-409c-a45b-3d95971aeb2f"
+                                            class="project-link preview-link" target="_blank" rel="noopener noreferrer">
+                                            <!-- Icono de vista previa -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                class="link-icon">
+                                                <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                            </svg>
+                                            App Demo
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Botón siguiente -->
+                    <button class="carousel-button next-button" aria-label="Proyecto siguiente">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
                 </div>
 
-                <!-- Proyecto ToDo -->
-                <div class="project-card">
-                    <div class="project-content">
-                        <!-- Vista previa del proyecto -->
-                        <div class="project-preview">
-                            <img src="img/ToDo.png" alt="Preview del proyecto" class="project-image">
-                        </div>
-                        <!-- Información del proyecto -->
-                        <div class="project-info">
-                            <h3 class="project-card-title">To-Do con React</h3>
-                            <!-- Stack tecnológico usado -->
-                            <div class="tech-stack">
-                                <img src="https://svgl.app/library/react_dark.svg" class="project-icon" alt="REACT" />
-                                <img src="https://svgl.app/library/vitejs.svg" class="project-icon" alt="VITE" />
-                            </div>
-                            <p class="project-description">
-                                El proyecto demuestra la implementación de tecnologías web modernas para crear una
-                                aplicación funcional y práctica de gestión de tareas
-                            </p>
-                            <!-- Enlaces al código y preview -->
-                            <div class="project-links">
-                                <a href="https://github.com/AntonySP22/pages-with-react" class="project-link code-link"
-                                    target="_blank" rel="noopener noreferrer">
-                                    <!-- Icono de GitHub -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="link-icon">
-                                        <path fill="currentColor"
-                                            d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.76-1.605-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.467-2.38 1.235-3.22-.124-.303-.535-1.527.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.29-1.552 3.296-1.23 3.296-1.23.653 1.649.242 2.873.118 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.804 5.62-5.475 5.92.43.37.814 1.102.814 2.222v3.293c0 .32.218.694.825.576C20.565 21.796 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
-                                    </svg>
-                                    Code
-                                </a>
-                                <!-- Link Preview -->
-                                <a href="https://antonysp22.github.io/pages-with-react/"
-                                    class="project-link preview-link" target="_blank" rel="noopener noreferrer">
-                                    <!-- Icono de vista previa -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="link-icon">
-                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="2"
-                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="2"
-                                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                                    </svg>
-                                    Preview
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Indicadores de posición -->
+                <div class="carousel-indicators">
+                    <button class="indicator active" data-slide="0" aria-label="Ir al proyecto 1"></button>
+                    <button class="indicator" data-slide="1" aria-label="Ir al proyecto 2"></button>
+                    <button class="indicator" data-slide="2" aria-label="Ir al proyecto 3"></button>
                 </div>
-
             </section>
 
-            
+
 
             <!-- Sección de manejo de tecnologías -->
             <section id="technologies" class="technologies-section">
@@ -282,28 +367,23 @@
                         </h3>
                         <div class="tech-grid">
                             <a class="tech-item">
-                                <img src="https://svgl.app/library/php_dark.svg"
-                                    alt="Php" class="tech-logo">
+                                <img src="https://svgl.app/library/php_dark.svg" alt="Php" class="tech-logo">
                                 <span class="tech-name">PhP</span>
                             </a>
                             <a class="tech-item">
-                                <img src="https://svgl.app/library/csharp.svg"
-                                    alt="C#" class="tech-logo">
+                                <img src="https://svgl.app/library/csharp.svg" alt="C#" class="tech-logo">
                                 <span class="tech-name">C#</span>
                             </a>
                             <a class="tech-item">
-                                <img src="https://svgl.app/library/java.svg"
-                                    alt="Java" class="tech-logo">
+                                <img src="https://svgl.app/library/java.svg" alt="Java" class="tech-logo">
                                 <span class="tech-name">Java</span>
                             </a>
                             <a class="tech-item">
-                                <img src="https://svgl.app/library/mysql.svg"
-                                    alt="MySQL" class="tech-logo">
+                                <img src="https://svgl.app/library/mysql.svg" alt="MySQL" class="tech-logo">
                                 <span class="tech-name">MySQL</span>
                             </a>
                             <a class="tech-item">
-                                <img src="https://svgl.app/library/sql-server.svg"
-                                    alt="SQL Server" class="tech-logo">
+                                <img src="https://svgl.app/library/sql-server.svg" alt="SQL Server" class="tech-logo">
                                 <span class="tech-name">SQL Server</span>
                             </a>
                         </div>
@@ -328,15 +408,19 @@
                                 <span class="learning-badge">Learning</span>
                             </a>
                             <a class="tech-item">
-                                <img src="https://svgl.app/library/spring.svg"
-                                    alt="Spring" class="tech-logo">
+                                <img src="https://svgl.app/library/spring.svg" alt="Spring" class="tech-logo">
                                 <span class="tech-name">Spring</span>
                                 <span class="learning-badge">Learning</span>
                             </a>
                             <a class="tech-item">
-                                <img src="https://svgl.app/library/azure.svg"
-                                    alt="Microsoft Azure" class="tech-logo">
+                                <img src="https://svgl.app/library/azure.svg" alt="Microsoft Azure" class="tech-logo">
                                 <span class="tech-name">Microsoft Azure</span>
+                                <span class="learning-badge">Learning</span>
+                            </a>
+                            <a class="tech-item">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNDAyLjM0Mzc1MDAwMDAwMDA2IiB2aWV3Qm94PSIwIDAgMjU2IDIwNiI+PHBhdGggZmlsbD0iI0VBNDMzNSIgZD0ibTE3MC4yNTIgNTYuODE5bDIyLjI1My0yMi4yNTNsMS40ODMtOS4zN0MxNTMuNDM3LTExLjY3NyA4OC45NzYtNy40OTYgNTIuNDIgMzMuOTJDNDIuMjY3IDQ1LjQyMyAzNC43MzQgNTkuNzY0IDMwLjcxNyA3NC41NzNsNy45Ny0xLjEyM2w0NC41MDUtNy4zNGwzLjQzNi0zLjUxM2MxOS43OTctMjEuNzQyIDUzLjI3LTI0LjY2NyA3Ni4xMjgtNi4xNjh6Ii8+PHBhdGggZmlsbD0iIzQyODVGNCIgZD0iTTIyNC4yMDUgNzMuOTE4YTEwMC4yNSAxMDAuMjUgMCAwIDAtMzAuMjE3LTQ4LjcyMmwtMzEuMjMyIDMxLjIzMmE1NS41MiA1NS41MiAwIDAgMSAyMC4zNzkgNDQuMDM3djUuNTQ0YzE1LjM1IDAgMjcuNzk3IDEyLjQ0NSAyNy43OTcgMjcuNzk2YzAgMTUuMzUyLTEyLjQ0NiAyNy40ODUtMjcuNzk3IDI3LjQ4NWgtNTUuNjcxbC01LjQ2NiA1LjkzNHYzMy4zNGw1LjQ2NiA1LjIzMWg1NS42N2MzOS45My4zMTEgNzIuNTUzLTMxLjQ5NCA3Mi44NjQtNzEuNDI0YTcyLjMgNzIuMyAwIDAgMC0zMS43OTMtNjAuNDUzIi8+PHBhdGggZmlsbD0iIzM0QTg1MyIgZD0iTTcxLjg3IDIwNS43OTZoNTUuNTkzVjE2MS4yOUg3MS44N2EyNy4zIDI3LjMgMCAwIDEtMTEuMzk5LTIuNDk4bC03Ljg4NyAyLjQybC0yMi40MDkgMjIuMjUzbC0xLjk1MiA3LjU3NGMxMi41NjcgOS40ODkgMjcuOSAxNC44MjUgNDMuNjQ3IDE0Ljc1NyIvPjxwYXRoIGZpbGw9IiNGQkJDMDUiIGQ9Ik03MS44NyA2MS40MjZDMzEuOTQgNjEuNjYzLS4yMzcgOTQuMjI3LjAwMSAxMzQuMTU4YTcyLjMgNzIuMyAwIDAgMCAyOC4yMjIgNTYuODhsMzIuMjQ4LTMyLjI0NmMtMTMuOTktNi4zMjItMjAuMjA4LTIyLjc4Ni0xMy44ODctMzYuNzc2czIyLjc4Ni0yMC4yMDggMzYuNzc1LTEzLjg4OGEyNy44IDI3LjggMCAwIDEgMTMuODg3IDEzLjg4OGwzMi4yNDgtMzIuMjQ4QTcyLjIyIDcyLjIyIDAgMCAwIDcxLjg3IDYxLjQyNyIvPjwvc3ZnPg=="
+                                    alt="Google Cloud" class="tech-logo">
+                                <span class="tech-name">Google Cloud</span>
                                 <span class="learning-badge">Learning</span>
                             </a>
                             <a class="tech-item">
@@ -359,20 +443,27 @@
                     </svg>
                     Sobre mí
                 </h2>
-                
+
                 <div class="about-content">
                     <div class="about-text">
                         <p>
-                            Soy un desarrollador web en formación con una sólida base en tecnologías frontend y backend. Como estudiante de <span class="highlight">Técnico en Ingeniería en Computación</span>, me apasiona crear soluciones digitales que combinen funcionalidad y diseño atractivo.
+                            Soy un desarrollador web en formación con una sólida base en tecnologías frontend y backend.
+                            Como estudiante de <span class="highlight">Técnico en Ingeniería en Computación</span>, me
+                            apasiona crear soluciones digitales que combinen funcionalidad y diseño atractivo.
                         </p>
                         <p>
-                            Mi experiencia abarca desde el desarrollo de sitios web responsivos hasta aplicaciones interactivas con React. Me destaco por mi capacidad para aprender rápidamente nuevas tecnologías y aplicarlas en proyectos reales.
+                            Mi experiencia abarca desde el desarrollo de sitios web responsivos hasta aplicaciones
+                            interactivas con React. Me destaco por mi capacidad para aprender rápidamente nuevas
+                            tecnologías y aplicarlas en proyectos reales.
                         </p>
                         <p>
-                            Aunque tengo experiencia en el desarrollo frontend, mi objetivo a futuro es especializarme en el desarrollo backend, creando sistemas robustos, escalables y eficientes que impulsen aplicaciones modernas.
+                            Aunque tengo experiencia en el desarrollo frontend, mi objetivo a futuro es especializarme
+                            en el desarrollo backend, creando sistemas robustos, escalables y eficientes que impulsen
+                            aplicaciones modernas.
                         </p>
                         <p>
-                            Actualmente, estoy ampliando mis conocimientos en ecosistemas como Spring, Microsoft Azure y PowerApps para desarrollar soluciones empresariales más completas.
+                            Actualmente, estoy ampliando mis conocimientos en ecosistemas como Spring, Microsoft Azure y
+                            PowerApps para desarrollar soluciones empresariales más completas.
                         </p>
                     </div>
                     <div class="about-image-container">
@@ -383,6 +474,54 @@
 
         </main>
     </div>
+
+    <script>
+        // Script del carrusel de proyectos
+        document.addEventListener('DOMContentLoaded', function () {
+            const carousel = document.querySelector('.project-carousel');
+            const prevButton = document.querySelector('.prev-button');
+            const nextButton = document.querySelector('.next-button');
+            const indicators = document.querySelectorAll('.indicator');
+
+            let currentSlide = 0;
+            const slideCount = document.querySelectorAll('.project-card').length;
+
+            // Función para mostrar un slide específico
+            function showSlide(index) {
+                if (index < 0) {
+                    currentSlide = slideCount - 1;
+                } else if (index >= slideCount) {
+                    currentSlide = 0;
+                } else {
+                    currentSlide = index;
+                }
+
+                // Mover el carrusel
+                carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+                // Actualizar indicadores
+                indicators.forEach((indicator, i) => {
+                    indicator.classList.toggle('active', i === currentSlide);
+                });
+            }
+
+            // Event listeners para los botones
+            prevButton.addEventListener('click', () => {
+                showSlide(currentSlide - 1);
+            });
+
+            nextButton.addEventListener('click', () => {
+                showSlide(currentSlide + 1);
+            });
+
+            // Event listeners para los indicadores
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    showSlide(index);
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

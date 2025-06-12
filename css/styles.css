@@ -530,3 +530,88 @@ section {
         max-width: 200px;
     }
 }
+
+/* Estilos del carrusel de proyectos */
+.project-carousel-container {
+  position: relative;
+  margin: 2rem 0;
+  overflow: hidden;
+}
+
+.project-carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 20px;
+}
+
+.project-carousel .project-card {
+  min-width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+/* Botones de navegación del carrusel */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.carousel-button svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+/* Indicadores del carrusel */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: var(--accent);
+}
+
+/* Estilos responsivos para el carrusel */
+@media (max-width: 768px) {
+  .carousel-button {
+    width: 32px;
+    height: 32px;
+  }
+}
